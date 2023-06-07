@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Timer : MonoBehaviour
+{   public float secTimer = 59
+    public int minTimer = 1
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(secTimer == 0)
+        {
+            secTimer += 59
+            minTimer -= 1
+        }
+        else
+        {
+            secTimer -= 0.01
+        }
+
+    }
+    
+}
